@@ -65,7 +65,7 @@ logDebug(){
 }
 runStringAsStep(){
     logDebug "Executing: ${grn}$*${end}"
-    #eval $* > /dev/null 2>&1
+    eval $* > /dev/null 2>&1
 }
 logInfo(){
     echo "${yel}[$(date)]:${end} ${blu}$* ${end}"
@@ -210,7 +210,6 @@ info(){
     echo ${sep2}
     printf "${formatConfig1}" "Repository Name" ${repositoryName}
     printf "${formatConfig1}" "Init" ${flagInit}
-    echo ${sep2}
     echo ${sep}
     echo
 }
@@ -231,7 +230,7 @@ set -eE
 logInfo "Trap set."
 logInfo "Commencing execution."
 
-    runStringAsStep "curl -k -s -w '%{http_code}' -H \"Content-Type:application/json\" ${babelGitlabURL}/api/${apiVersion}/projects?private_token=${accessToken} -d \"{ \"name\": \\\"${repositoryName}\\\" }"
+    runStringAsStep "curl -f -k -s -w '%{http_code}' -H \"Content-Type:application/json\" ${babelGitlabURL}/api/${apiVersion}/projects?private_token=${accessToken} -d \"{ \\\"name\\\": \\\"${repositoryName}\\\" }\""
 
     if [[ ${flagInit} -eq 1 ]]; then
         logInfo "Initing the repository."
