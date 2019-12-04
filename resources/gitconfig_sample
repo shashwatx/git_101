@@ -1,21 +1,10 @@
 [user]
     name = Shashwat Mishra
-    email = shashwat.x@gmail.com
+    email = shashwat.mishra@babel.es
 [github]
     user = shashwatx
 [alias]
-#    rod = rebase origin/development
-#    rom = rebase origin/master
     pom = push origin master
-    poh = push heroku master
-#   pod = push origin development
-#   pogh = push origin gh-pages
-#    get = pull --rebase
-#    pu = pull
-#    po  = push origin
-#    fo  = fetch origin
-#    co  = checkout
-#    ci  = commit
     incommit  = "!f() { git diff "$1"^.."$1"; }; f"
     phew  = "!f() { git add -u;git commit -m "stuff";git push origin master; }; f"
     lop = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(blue)(%an <%ae>)%Creset' --abbrev-commit --date=relative
@@ -27,6 +16,8 @@
 [help]
     autocorrect = 0
 [push]
-    default = simple
+	default = current
+[pull]
+	default = current
 [credential]
 	helper = store
