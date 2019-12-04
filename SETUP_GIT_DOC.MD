@@ -102,6 +102,7 @@ Create a branch and work on it.
 ```
 git checkout -b branch_0
 # modify some file
+git add -u
 git commit -m "branch_0: another informative commit message"
 git push
 ```
@@ -128,6 +129,7 @@ Create a branch and work on it.
 ```
 git checkout -b branch_1
 # modify some file
+git add -u
 git commit -m "branch_1: another informative commit message"
 git push
 ```
