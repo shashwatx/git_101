@@ -34,7 +34,7 @@ where:
 
 babelGitlabURL="https://git.babel.es:4433"
 apiVersion="v4"
-accessToken="AkByku-MUzDAoerEmAd9"
+accessToken="dummy_val"
 
 exec 3>&1
 set -o pipefail
