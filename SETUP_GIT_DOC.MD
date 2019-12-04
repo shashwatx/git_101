@@ -83,8 +83,8 @@ git push
 
 1. Clone an existing repository.
 ```
-cd ~/repos
-git clone https://git.babel.es:4433/shashwat.mishra/lemo.git
+cd ~/scratch
+git clone https://git.babel.es:4433/shashwat.mishra/my_first_git_repository.git
 ```
 
 ## Workflows   
