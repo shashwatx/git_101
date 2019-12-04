@@ -29,7 +29,7 @@ where:
             -v Specify api version.
             -t Specify access token (overrides hard-coded value).
             -i Init repository, add remote after creation.
-======================================================================================================
+====================================================================================
 "
 
 babelGitlabURL="https://git.babel.es:4433"
