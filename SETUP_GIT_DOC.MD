@@ -151,5 +151,11 @@ git merge branch_1 --no-commit --no-ff
 ```
 Automatic merge should fail.
 You should see some conflicts.
-Resolve conflicts, commit, push.
+
+Resolve conflicts manually. 
+```
+git add -u
+git commit -m "master: all conflicts resolved"
+git push
+```
 
