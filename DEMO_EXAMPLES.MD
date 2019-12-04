@@ -1,8 +1,10 @@
 # Before you begin
 1. Enable WSL
 [Instructions](https://winaero.com/blog/enable wsl windows 10 fall creators update/)
+
 2. Install MobaXTerm
 [Instructions](https://mobaxterm.mobatek.net/download-home-edition.html)_
+
 3. Install Ubuntu App
 [Link](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6)
 
