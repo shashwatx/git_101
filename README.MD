@@ -10,10 +10,10 @@ PPT presentation for Big Data Analytics for git101.
 6. Create repository command line.
 
 ## Git: Basic Workflow.
-1. status
-2. add
-3. commit
-4. push
+1. git status
+2. git add
+3. git commit -m
+4. git push origin password
 
 ## Git: Diving Deeper
 1. branches
