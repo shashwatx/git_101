@@ -1,15 +1,16 @@
 # Before you begin
 1. __Enable WSL__.
 
-  [Instructions](https://winaero.com/blog/enable-wsl-windows-10-fall-creators-update/)
+Follow instructions [here](https://winaero.com/blog/enable-wsl-windows-10-fall-creators-update/).
 
 2. __Install MobaXTerm__.
 
-  [Instructions](https://mobaxterm.mobatek.net/download-home-edition.html)
+Follow instructions [here](https://mobaxterm.mobatek.net/download-home-edition.html).
 
 3. __Install Ubuntu App__.
 
-  [Link](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6)
+Follow instructions [here](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6).
+
 
 # Install Dependencies in Ubuntu
 
@@ -40,27 +41,3 @@ sudo chmod 755 git-create
 sudo cp git-create /usr/bin/git-create
 ```
 
-## Git: Key Concepts.
-1. What is git?
-2. History
-3. Install git
-4. Create repository on gitlab.
-5. Setup github account. Create repository web.
-6. Create repository command line.
-
-## Git: Basic Workflow.
-1. status
-2. add
-3. commit
-4. push
-
-## Git: Diving Deeper
-1. branches
-2. pull
-3. merge
-  1. conflicts
-4. rebase?
-
-## Git: Final Notes.
-1. Setup .gitconfig
-2. Store password
