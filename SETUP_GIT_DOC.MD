@@ -13,7 +13,7 @@
 
 # Install Dependencies in Ubuntu
 
-1. __Install git if not already installed__.
+1. __Install__ git if not already installed.
 ```
 sudo -i
 apt-get update
@@ -21,7 +21,7 @@ apt-get install -y git
 exit
 ```
 
-2. __Setup _gitconfig_ __.
+2. __Setup__ _gitconfig_.
 ```
 cd ~
 mkdir scratch
@@ -33,7 +33,7 @@ Modify the file _gitconfig\_sample_ with your details and copy it to your home.
 cp gitconfig_sample ~/.gitconfig
 ```
 
-3. __Setup _git-create_ __.
+3. __Setup__ _git-create_.
 ```
 wget https://raw.githubusercontent.com/shashwatx/git_101/master/scripts/git-create
 sudo chmod 755 git-create
