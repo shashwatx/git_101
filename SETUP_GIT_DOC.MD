@@ -1,19 +1,19 @@
 # Before you begin
-1. Enable WSL.
+1. __Enable WSL__.
 
   [Instructions](https://winaero.com/blog/enable-wsl-windows-10-fall-creators-update/)
 
-2. Install MobaXTerm.
+2. __Install MobaXTerm__.
 
   [Instructions](https://mobaxterm.mobatek.net/download-home-edition.html)
 
-3. Install Ubuntu App.
+3. __Install Ubuntu App__.
 
   [Link](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6)
 
 # Install Dependencies in Ubuntu
 
-1. Install git if not already installed.
+1. __Install git if not already installed__.
 ```
 sudo -i
 apt-get update
@@ -21,7 +21,7 @@ apt-get install -y git
 exit
 ```
 
-2. Setup _gitconfig_.
+2. __Setup _gitconfig_ __.
 ```
 cd ~
 mkdir scratch
@@ -33,7 +33,7 @@ Modify the file _gitconfig\_sample_ with your details and copy it to your home.
 cp gitconfig_sample ~/.gitconfig
 ```
 
-3. Setup _git-create_.
+3. __Setup _git-create_ __.
 ```
 wget https://raw.githubusercontent.com/shashwatx/git_101/master/scripts/git-create
 sudo chmod 755 git-create
