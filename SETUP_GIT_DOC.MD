@@ -89,7 +89,7 @@ git clone https://git.babel.es:4433/shashwat.mishra/my_first_git_repository.git
 
 ## Workflows   
 
-1. Simple Workflow.
+1. __Simple Workflow__.
 ```
 # assuming you are inside the parent directory of the repository.
 # modify some file
@@ -98,7 +98,7 @@ git commit -m "master: my super informative commit message"
 git push
 ```
 
-2. Branch and Merge: Variant 1
+2. __Branch and Merge: Variant 1__
 
 Create a branch and work on it.
 ```
@@ -115,7 +115,7 @@ git checkout master
 git merge branch_0 --no-commit --no-ff
 ```
 
-3. Branch and Merge: Variant 2
+3. __Branch and Merge: Variant 2__
 Create a branch and work on it.
 ```
 git checkout -b branch_1
