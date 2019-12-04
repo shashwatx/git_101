@@ -99,6 +99,7 @@ git push
 ```
 
 2. Branch and Merge: Variant 1
+
 Create a branch and work on it.
 ```
 git checkout -b branch_0
