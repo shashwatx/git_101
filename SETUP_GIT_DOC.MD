@@ -110,11 +110,16 @@ Merge branch _branch\_0_ onto branch _master_.
 # get the latest version of branch_0
 git checkout branch_0
 git pull origin branch_0
+
 # get the latest version of master
 git checkout master
-git pull origin master
+git pull
+
 # merge
 git merge branch_0 --no-commit --no-ff
+
+# push
+git push
 ```
 
 3. __Branch and Merge: Variant 2__
