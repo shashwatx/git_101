@@ -136,15 +136,17 @@ git push
 Meanwhile, branch _master_ has received some commits.
 ```
 git checkout master
-# modify some file
+# modify the same file that you modified in branch_1
+git add -u
 git commit -m "master: another informative commit message"
 git push
 ```
 Merge branch_1 onto branch _master_.
 ```
 git checkout branch_1
-git pull
+git pull origin branch_1
 git checkout master
+git pull
 git merge branch_1 --no-commit --no-ff
 ```
 Automatic merge should fail.
