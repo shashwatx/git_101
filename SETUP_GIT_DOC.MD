@@ -54,7 +54,7 @@ ln -s /mnt/c/Users/shashwat.mishra/Documents/repos
 
 ## Creating Repositories
 
-1. Create a new repository for a new project.
+1. __Create a new repository for a new project__.
 ```
 cd ~/repos
 mkdir my_first_git_repository
@@ -67,7 +67,7 @@ git commit -m "adding first version of files"
 git push
 ```
 
-2. Create a new repository for an existing project.
+2. __Create a new repository for an existing project__.
 ```
 cd ~/repos
 cd my_existing_project
@@ -79,7 +79,7 @@ git commit -m "adding first version of files"
 git push
 ```
 
-3. Clone an existing repository.
+3. __Clone an existing repository__.
 ```
 cd ~/repos
 git clone https://git.babel.es:4433/shashwat.mishra/my_first_git_repository.git
