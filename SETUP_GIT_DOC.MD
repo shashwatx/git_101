@@ -11,6 +11,9 @@ Follow instructions [here](https://mobaxterm.mobatek.net/download-home-edition.h
 
 Follow instructions [here](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6).
 
+4. __Fetch__ access token.
+
+Follow instructions [here](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)
 
 # Install Dependencies in Ubuntu
 
@@ -48,13 +51,35 @@ ln -s /mnt/c/Users/shashwat.mishra/Documents/repos
 ```
 
 # Using Git
+
 ## Creating Repositories
 
 1. Create a new repository.
+```
+cd ~/scratch
+mkdir my_first_git_repository
+cd my_first_git_repository
+git create -u shashwat.mishra -t <access_token> -i
+touch my_first_file.txt
+# edit my_first_file
+git add my_first_file.txt
+git commit -m "adding first version of files"
+git push
+```
 
 2. Create a repository for an existing project.
+```
+cd ~/repos
+cd my_existing_project
+git create -u shashwat.mishra -t <access_token> -i
+# add all relevant files
+# use .gitignore to prevent uploading large files
+git add .
+git commit -m "adding first version of files"
+git push
+```
 
-## Workflow   
+## Workflows   
 
 1. Simple Workflow.
 ```
