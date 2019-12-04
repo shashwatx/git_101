@@ -79,10 +79,19 @@ git commit -m "adding first version of files"
 git push
 ```
 
+## Cloning Repositories
+
+1. Clone an existing repository.
+```
+cd ~/repos
+git clone https://git.babel.es:4433/shashwat.mishra/lemo.git
+```
+
 ## Workflows   
 
 1. Simple Workflow.
 ```
+# assuming you are inside the parent directory of the repository.
 # modify some file
 git add -u
 git commit -m "master: my super informative commit message"
