@@ -11,7 +11,7 @@ Follow instructions [here](https://mobaxterm.mobatek.net/download-home-edition.h
 
 Follow instructions [here](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6).
 
-4. __Fetch__ access token.
+4. __Fetch Gitlab Token__.
 
 Follow instructions [here](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)
 
