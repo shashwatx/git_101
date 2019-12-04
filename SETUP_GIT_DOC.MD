@@ -123,6 +123,7 @@ git push
 ```
 
 3. __Branch and Merge: Variant 2__
+
 Create a branch and work on it.
 ```
 git checkout -b branch_1
@@ -145,6 +146,6 @@ git checkout master
 git merge branch_1 --no-commit --no-ff
 ```
 Automatic merge should fail.
-Additionally, you must see some conflicts.
+You should see some conflicts.
 Resolve conflicts, commit, push.
 
