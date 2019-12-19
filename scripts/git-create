@@ -156,9 +156,6 @@ init(){
         errMsg "You must specify LDAP username (-u)."
     fi
 
-
-    set +e
-
     logInfo "Init call finished."
 }
 pause() {
