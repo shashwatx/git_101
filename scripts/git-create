@@ -1,19 +1,23 @@
 #!/usr/bin/env bash
 
 helpMessage="
-===================================================================================
+==================================================================
 git-create v0.1
-===================================================================================
-This script facilitates CLI based creation of git repositories on Babel's gitlab
-server. To generate a list of accepted parameters run \"$0 -h\".
+==================================================================
+This script facilitates CLI based creation of git repositories on 
+Babel's gitlab server. 
+
+The created repository is named after the name of the current
+directory. For ex. if the script is called from the path
+/home/alpha/repos/my_repo, the created repository is \"my_repo\".
 
 Date:           Dec, 3rd, 2019
 Author:         Shashwat Mishra
 Affiliation:    Babel, Spain
-===================================================================================
+==================================================================
 "
 usageMessage="
-===================================================================================
+==================================================================
 Usage:
 
     $0 [OPTIONS]
@@ -29,7 +33,7 @@ where:
             -v Specify api version.
             -t Specify access token (overrides hard-coded value).
             -i Init repository, add remote after creation.
-====================================================================================
+==================================================================
 "
 
 babelGitlabURL="https://git.babel.es:4433"
@@ -225,10 +229,10 @@ askYesNo "Do you want to create the repository with the above details?"
 
 if [[ ${response} -eq 1 ]]; then
 
-trap 'cleanUP' ERR TERM
-set -eE
-logInfo "Trap set."
-logInfo "Commencing execution."
+    trap 'cleanUP' ERR TERM
+    set -eE
+    logInfo "Trap set."
+    logInfo "Commencing execution."
 
     runStringAsStep "curl -f -k -s -w '%{http_code}' -H \"Content-Type:application/json\" ${babelGitlabURL}/api/${apiVersion}/projects?private_token=${accessToken} -d \"{ \\\"name\\\": \\\"${repositoryName}\\\" }\""
 
